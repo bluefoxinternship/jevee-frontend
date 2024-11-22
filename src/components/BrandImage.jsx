@@ -4,6 +4,7 @@ import products from "../data/product";
 const BrandImage = ({ imageUrls }) => {
   return (
     <section className="bg-gray-100 py-8">
+      <p>hello</p>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* First Image */}
