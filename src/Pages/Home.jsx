@@ -1,4 +1,5 @@
 import BrandCard from "../components/BrandCard";
+import BrandImage from "../components/BrandImage";
 import BrandOfTheHour from "../components/BrandOfTheHour";
 import BrandOfThisSeason from "../components/BrandOfThisSeason";
 import BrandsForYou from "../components/BrandsForYou";
@@ -62,6 +63,7 @@ export default function Home() {
           altText="Responsive Featured Banner"
         />
         <BrandsForYou />
+        <BrandImage />
         <ExploreGadgetsAndAccesories
           href={"/"}
           title={"Explore Gadgets and Accessories"}
