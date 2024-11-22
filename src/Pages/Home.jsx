@@ -9,6 +9,7 @@ import MostSearchedProducts from "../components/MostSearchedProducts";
 import ProductDisplay from "../components/ProductDisplay";
 import ResponsiveBanner from "../components/ResponsiveBanner";
 import Responsivecarousel from "../components/Responsivecarousel";
+import BrandHairCare from "../components/BrandHairCare";
 import products from "../data/product";
 export default function Home() {
   return (
@@ -71,6 +72,17 @@ export default function Home() {
           products={products}
         />
         <BestSeller href={"/"} title={"Best Seller"} products={products} />
+        <BestSeller
+          href={"/"}
+          title={"Best Diaper Deals"}
+          products={products}
+        />
+        <BrandHairCare />
+        <BestSeller
+          href={"/"}
+          title={"Recommwnded Products"}
+          products={products}
+        />
       </div>
     </div>
   );
