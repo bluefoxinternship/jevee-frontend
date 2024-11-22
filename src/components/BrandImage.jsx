@@ -1,7 +1,7 @@
 import React from "react";
 import products from "../data/product";
 
-const BrandImage = ({ imageUrls }) => {
+const BrandImage = () => {
   return (
     <section className="bg-gray-100 py-8">
       <div className="container mx-auto px-5">

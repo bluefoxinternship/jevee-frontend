@@ -1,3 +1,4 @@
+import BestSeller from "../components/BestSeller";
 import BrandCard from "../components/BrandCard";
 import BrandImage from "../components/BrandImage";
 import BrandOfTheHour from "../components/BrandOfTheHour";
@@ -69,6 +70,7 @@ export default function Home() {
           title={"Explore Gadgets and Accessories"}
           products={products}
         />
+        <BestSeller href={"/"} title={"Best Seller"} products={products} />
       </div>
     </div>
   );
