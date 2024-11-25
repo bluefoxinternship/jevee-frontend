@@ -1,22 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./login.css";
 import Logo from "../../assets/img/logo.webp";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { login } from "../../Redux/Slice/authSlice";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
+  const dispatch = useDispatch();
+  const { isAuthenticated, user, isLoading, error } = useSelector(
+    (state) => state.auth
+  );
 
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ email, password, rememberMe });
-
-    navigate("/admin");
+    dispatch(login({formData:{email,password,rememberMe}}));
   };
-
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate("/admin");
+    }
+  }, [isAuthenticated, navigate])
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="block">

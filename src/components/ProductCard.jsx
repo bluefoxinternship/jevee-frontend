@@ -15,7 +15,7 @@ export default function ProductCard({ product }) {
 
     return (
 
-        <Link to={href} className="group transition-all duration-300     border-gray-100/30 flex min-w-[214px] flex-col self-center overflow-hidden rounded-lg border h-[385px] shadow-md bg-[#FFFFFF] text-black">
+        <Link to={href} className="group transition-all duration-300     border-gray-100/30 flex min-w-[214px] flex-col self-center overflow-hidden rounded-lg border h-[390px] shadow-md bg-[#FFFFFF] text-black">
             <div className="relative w-full h-[272px] px-2 mx-auto">
                 {/* Conditionally Render Tag */}
                 {tag && (
@@ -27,7 +27,7 @@ export default function ProductCard({ product }) {
 
                 {/* Star Rating */}
                 {rating > 0 && reviewCount > 0 && (
-                    <div className="absolute z-10 bottom-2 left-2 text-black text-xs px-2 py-1 rounded-md flex items-center space-x-1">
+                    <div className="absolute z-10 bottom-1 left-2 text-black text-xs px-2 py-1 rounded-md flex items-center space-x-1">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
@@ -87,7 +87,7 @@ export default function ProductCard({ product }) {
                             </svg>
                         </button>
                         {/* Add to Cart */}
-                        <button className="flex-1 bg-[#F25CA8] text-white py-2 rounded-sm hover:bg-red-600 transition">
+                        <button className="flex-1 bg-[#F25CA8] text-white py-2 rounded-sm hover:shadow-md hover:bg-[#F25CA8]">
                             Add to Cart
                         </button>
                     </div>
