@@ -98,7 +98,16 @@ function Header() {
          <input type="search" className='outline-none text-sm bg-transparent px-2' placeholder='Search for medicine...'/>
          </div>
          </li>
-         <li className='hidden lg:flex bg-[#F25CA8] items-center px-4 rounded-md gap-2 py-[1px] text-white'><IoCameraOutline className='text-4xl'/> <p className='text-[12px]'>Upload <br /><span className='font-semibold text-sm'>Prescriptions</span></p></li>
+         <li className="hidden lg:flex bg-[#F25CA8] items-center px-4 rounded-md gap-2 py-[1px] text-white hover:shadow-md transition duration-300">
+  <Link to="/prescriptions" className="flex items-center gap-2 text-white">
+    <IoCameraOutline className="text-4xl" />
+    <p className="text-[12px]">
+      Upload <br />
+      <span className="font-semibold text-sm">Prescriptions</span>
+    </p>
+  </Link>
+</li>
+
 
          <li className='relative group cursor-pointer flex justify-between items-center gap-[1px]'><FaRegUser className='text-2xl md:text-3xl'/>
          <div className='hidden xl:flex flex-col'><p className='text-[12px]'>HelloUser</p>
