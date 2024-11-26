@@ -5,7 +5,7 @@ const Dashboard = () => {
   return (
     <>
       <div className="cardHead -z-[0]">
-        <h2 className='text-3xl font-semibold text-[#34395E]'>Dashboard</h2>
+        <h2 className='text-2xl font-semibold text-[#34395E]'>Dashboard</h2>
       </div>
       <div className="p-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
